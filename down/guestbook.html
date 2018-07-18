@@ -1,0 +1,1470 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>留言板 乐哥下载</title>
+  <link rel="icon" href="images/favicon.ico"
+<META http-equiv=Pragma content=no-cache>
+<meta name="Keywords" content="乐哥下载留言板">
+<meta name="Description" content="下载碰到问题请留言">
+<link rel="stylesheet" href="style/style.css" type="text/css" />
+<style type="text/css">
+<!--
+body,td,th {
+	font: 14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #222;
+}
+-->
+</style>
+<script>
+    function del(id){
+		if(confirm("确定要删除吗？")){
+			window.location='?id='+id;
+			}
+		}
+</script>
+<script>
+    function re(id){
+			document.getElementById("reply_id").value = id;
+			document.getElementById("reply").style.display = "block";
+		}
+</script>
+<script language=javascript>
+  function CheckPost()
+ {
+
+	if (myform.title.value.length<2)
+	{
+		alert("标题不能少于2个字符");
+		myform.title.focus();
+		return false;
+	}
+	if (myform.name.value=="")
+	{
+		alert("昵称不能为空");
+		myform.name.focus();
+		return false;
+	}
+	if (myform.content.value.length<10)
+	{
+		alert("内容不能少于10个字符");
+		myform.content.focus();
+		return false;
+	}
+ }
+</script>
+</head>
+<body>
+<div class="content">
+	<div class="header_right">
+			<div class="top_info">
+				<div class="top_info_right">
+			<p>
+			<a href="//v.choong.net/" title="乐哥 VIP视频解析站-为亲爱的张龙梅子而做的视频网站(乐视爱奇艺腾讯优酷vip视频在线解析)" target="_blank"><b>在线看VIP视频</b></a> | 
+            <A title=收藏乐哥下载 
+            href="javascript:window.external.AddFavorite('http://v.choong.net/down', '乐哥下载解决决你的小问题')" 
+            target=_self>收藏乐哥下载</A>           
+            </p>					
+				</div>		
+			</div>
+					
+	  <div class="bar">
+  	<ul>
+		</ul>
+		  </div>
+		</div>
+			
+		<div class="logo">
+			<h1>
+			<a href='/' class=logo_link><img src="images/logo.png" alt=xxx></a>
+			<A title="乐哥下载首页" href="/" target="_self"> <span class="red">v.</span>choong<span class="red">.net</span></A></h1>
+			<p>乐哥在线！即刻下载！</p>
+		</div>
+		<div class="search_field">
+            
+        <div class="navmenu">  
+		      <div class="menu"><a href="index.html" title="下载微信公众号音频"><b>下载首页</b></a></div>
+			<div class="menu"><a href="wxxz.html" title="下载微信公众号音频"><b>微信公众号</b></a></div>
+			<div class="menu"><a href="xmlyxz.html" title="下载喜马拉雅FM音频"><b>喜马拉雅FM</b></a></div>
+			<div class="menu"><a href="gkkxz.html" title="下载网易公开课视频"><b>网易公开课</b></a></div>
+			<div class="menu"><a href="#" title="下载网易云音乐"><b>网易云音乐</b></a></div>
+		    <div class="menu"><a href="mpxz.html" title="下载美拍短视频"><b>美拍短视频</b></a></div>
+			<div class="menu"><a href="qtfm.html" title="下载蜻蜓FM音频"><b>蜻蜓FM电台</b></a></div>
+			<div class="menu_right"><a href="guestbook.html?tj=add" title="去留言,让我们做得更好" target="_blank"><b>留言</b></a></div>
+		</div>
+
+		</div>
+	         
+		<div class="middle">
+		</div>
+	</div>
+	<div class="content" style="font: 12px;">
+<form  name="myform" method="post" onSubmit="return CheckPost()" action="" style="margin-bottom:5px;">
+  <table width="980" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td height="5"></td>
+    </tr>
+  </table>
+  <table width="980" border="0" align="center" cellpadding="5" cellspacing="1" bgcolor="#B3B3B3" border="1">
+<tr>
+    <td width="90" align="center" bgcolor="#FFFFFF">留言标题：</td>
+    <td width="890" bgcolor="#FFFFFF"><input type="text" name="title"/>
+      &nbsp;*</td>
+</tr>
+<tr>
+     <td align="center" bgcolor="#FFFFFF">网友昵称：</td>
+     <td bgcolor="#FFFFFF"><input name="name" type="text" id="name"/> 
+       &nbsp;*</td>    
+</tr>
+<tr>
+  <td align="center" bgcolor="#FFFFFF">网友表情：</td>
+  <td bgcolor="#FFFFFF"><input type="radio" value="1" name="face" checked="checked" />
+                            <img src="face/pic1.gif" width="20" height="20" border="0" />
+                            <input type="radio" value="2" name="face" />
+                            <img src="face/pic2.gif" width="20" height="20" border="0" />
+                            <input type="radio" value="3" name="face" />
+                            <img src="face/pic3.gif" width="20" height="20" border="0" />
+                            <input type="radio" value="4" name="face" />
+                            <img src="face/pic4.gif" width="20" height="20" border="0" />
+                            <input type="radio" value="5" name="face" />
+                            <img src="face/pic5.gif" width="20" height="20" border="0" />
+                            <input type="radio" value="6" name="face" />
+                            <img src="face/pic6.gif" width="20" height="20" border="0" />
+                            <input type="radio" value="7" name="face" />
+                            <img src="face/pic7.gif" width="20" height="20" border="0" /></td>
+</tr>
+<tr>
+     <td align="center" bgcolor="#FFFFFF">留言内容：</td>
+     <td bgcolor="#FFFFFF"><span class="red">碰到问题请把链接贴上来以便解决</span>留言不能小于10个字符<br>
+     <textarea name="content" rows="5" cols="80" style="resize: none;"></textarea>
+     </td>
+</tr>
+<tr>
+      <td colspan="2" align="center" bgcolor="#FFFFFF">
+        <input name="submit" type="submit"value="提交" />&nbsp;&nbsp; 
+        <input name="reset" type="reset"  value="重填"/>      </td>
+    </tr>
+</table>
+</form>
+<table width="980" border="0" align="center" cellpadding="5" cellspacing="1" bgcolor="#B3B3B3" style="font: 22px;">
+  <tr>
+    <td height="25" align="center" bgcolor="#EBEBEB"><a href="guestbook.html">查看留言</a>&nbsp;|&nbsp;<a href="guestbook.html?tj=add">添加留言</a>&nbsp;|&nbsp;<a href="guestbook.html?tj=login">留言管理</a>&nbsp;|&nbsp;</td>
+  </tr>
+</table>
+
+<table width="980" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="5"></td>
+  </tr>
+</table>
+
+<table width="980" border="0" align="center" cellpadding="5" cellspacing="1" bgcolor="#B3B3B3" style="font: 22px;">
+<tr>
+<th width="60" bgcolor="#EBEBEB"><b>表情</b></th>
+<th width="76" bgcolor="#EBEBEB"><b>留言标题</b></th>
+<th width="77" bgcolor="#EBEBEB"><b>网友昵称</b></th>
+<th width="133" bgcolor="#EBEBEB"><b>留言内容</b></th>
+<th width="78" bgcolor="#EBEBEB"><b>留言时间</b></th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">﻿下载碰到问题看这里</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">管理员</th>
+<td align="center" bgcolor="#FFFFFF">下载碰到问题的请把链接复制到这里</th>
+<td align="center" bgcolor="#FFFFFF">07/02 09:00</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">可以下载哈</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">知乎网友</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅音频可以下载</th>
+<td align="center" bgcolor="#FFFFFF">07/02 17:00</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">下载微信公众号音频</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">百度</th>
+<td align="center" bgcolor="#FFFFFF">比其他的方法简单，可以下载微信公众号音频，谢谢<br><b>管理员回复:谢谢</b></th>
+<td align="center" bgcolor="#FFFFFF">07/05 22:03</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">搜索结果最大为200个</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">杨恒</th>
+<td align="center" bgcolor="#FFFFFF">搜索结果最大为200个，超过200个的，后面就下载不到，期待可以改进<br><b>管理员回复:管理员回复:已经支持超过200集专辑的下载了。</b></th>
+<td align="center" bgcolor="#FFFFFF">07/15 02:04</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">补充</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">杨恒</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅音频下载的时候<br><b>管理员回复:准备搞定这个问题。。。</b></th>
+<td align="center" bgcolor="#FFFFFF">07/21 13:02</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅下载问题</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">max</th>
+<td align="center" bgcolor="#FFFFFF">在喜马拉雅下载的音频有400集，现在只能下载到200集。其他的我打开了说搜索不到网页？请问怎么解决？</th>
+<td align="center" bgcolor="#FFFFFF">08/10 02:00</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">部分字符在无法作为文件名</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">root</th>
+<td align="center" bgcolor="#FFFFFF">比如/,windows下有一些字符是无法出现在文件名里，会出现bat重命名不了的情况<br><b>管理员回复:多谢建议，已经fix了</b></th>
+<td align="center" bgcolor="#FFFFFF">07/23 01:08</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅音频下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">szploy</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅音频下载的时候，前1－80下载不了，http://www.ximalaya.com/20344814/album/323509/?order=desc&page=1</th>
+<td align="center" bgcolor="#FFFFFF">08/14 21:08</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅下载问题</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">jy</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅的音频下载不了哎</th>
+<td align="center" bgcolor="#FFFFFF">08/14 21:08</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">无法下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">caty</th>
+<td align="center" bgcolor="#FFFFFF">无法下载
+提示：没有找到正确的下载地址，请检查你输入的网址！</th>
+<td align="center" bgcolor="#FFFFFF">08/15 14:01</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅服务器更新了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">管理员</th>
+<td align="center" bgcolor="#FFFFFF">正在修改程序，预计明天喜马拉雅的音频可以正常下载。</th>
+<td align="center" bgcolor="#FFFFFF">08/16 12:02</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅音频可以正常下载了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">管理员</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅可以正常下载了。</th>
+<td align="center" bgcolor="#FFFFFF">08/16 21:04</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">下载不了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">hydan</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/41623556/album/5444801<br><b>管理员回复:请将链接 http://www.ximalaya.com/41623556/album/5444801 修改为 http://www.ximalaya.com/41623556/album/5444801/ 就可以正常下载了， 看来是要找一个好用的留言板了。</b><br><b>管理员回复:已经解决了这个问题。支持两种格式的链接。</b></th>
+<td align="center" bgcolor="#FFFFFF">08/20 09:04</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅第二页无法下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">manda</th>
+<td align="center" bgcolor="#FFFFFF">如果翻页，就没有办法下载了，网页不认。
+http://www.ximalaya.com/11027733/album/6784184?page=2<br><b>管理员回复:也是由于专辑数量超过200集了。暂时不支持超过200集的专辑下载。</b><br><b>管理员回复:最新版本已经解决了这个问题。</b></th>
+<td align="center" bgcolor="#FFFFFF">08/21 14:00</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">懒人听书的网页啥时候也能下载就好了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">感谢管理员老大</th>
+<td align="center" bgcolor="#FFFFFF">懒人听书，和喜马拉雅差不多，如果管理员也能弄成可以用电脑下载就好了。非常感谢。<br><b>管理员回复:考虑实现。。。</b></th>
+<td align="center" bgcolor="#FFFFFF">08/24 22:00</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">现在下载不了xmly了吗</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">hlj</th>
+<td align="center" bgcolor="#FFFFFF">现在下载不了xmly了吗<br><b>管理员回复:请贴上具体的链接</b></th>
+<td align="center" bgcolor="#FFFFFF">08/29 15:03</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅下载不来</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">wangleilei</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/68342676/sound/39844583/
+怎么下载不了呢？没有反应<br><b>管理员回复:http://www.ximalaya.com/68342676/sound/39844583/是收费节目，暂时不支持下载。</b></th>
+<td align="center" bgcolor="#FFFFFF">09/04 17:06</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅</th>
+<td align="center" bgcolor="#FFFFFF"> 喜马拉雅下载不了了<br><b>管理员回复:请贴上具体的链接</b></th>
+<td align="center" bgcolor="#FFFFFF">09/04 18:02</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">200个有办法突破吗</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">bluebird</th>
+<td align="center" bgcolor="#FFFFFF">特别方便，批量下载批量改名！赞！就是200的下载量能有办法突破吗？<br><b>管理员回复:可以突破的，就是对服务器消耗比较大，准备实现中...</b><br><b>管理员回复:最新版本已经解决了这个问题。</b></th>
+<td align="center" bgcolor="#FFFFFF">09/05 15:03</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">超过200的音频下载不了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">轻妤</th>
+<td align="center" bgcolor="#FFFFFF">这个网站真好，就是没办法下载超过200的音频，其实我想下载音频的前半部分，但总数在200以上，就只能从最新的开始排序，下200个，前面的下不了<br><b>管理员回复:前面200个，现在只能一个一个的下载的。还是可以下的。请参考http://jikexiazai.cn/xmly_help.html#download_sound</b><br><b>管理员回复:最新版本已经解决了这个问题。</b></th>
+<td align="center" bgcolor="#FFFFFF">09/08 10:07</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅下载不了了？</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">celia</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/album/417054  没能下载。 提示：没有找到正确的下载地址，请检查输入的网址。<br><b>管理员回复:修改成http://www.ximalaya.com/album/417054/ 就可以下载了。</b><br><b>管理员回复:管理员回复:最新版本已经解决了这个问题。同时支持这两种格式。</b></th>
+<td align="center" bgcolor="#FFFFFF">09/10 03:00</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">荔枝</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">lu</th>
+<td align="center" bgcolor="#FFFFFF">还想要听荔枝的音频，跪求大神！<br><b>管理员回复:准备实现中。</b></th>
+<td align="center" bgcolor="#FFFFFF">09/10 03:03</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅已付费的节目可以下载吗</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">celia</th>
+<td align="center" bgcolor="#FFFFFF">免费节目能下载了，付过费的收费节目可以下载吗？<br><b>管理员回复:付费节目不支持哈</b></th>
+<td align="center" bgcolor="#FFFFFF">09/10 22:06</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">最新更新</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">管理员</th>
+<td align="center" bgcolor="#FFFFFF">改进了之前的一些不方便的地方：
+支持多种下载链接。
+后台统一编码。
+关键是支持超过200集的专辑下载。<br><b>管理员回复:已经支持超过200集专辑的下载了。</b></th>
+<td align="center" bgcolor="#FFFFFF">09/11 22:00</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">不能下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">可可</th>
+<td align="center" bgcolor="#FFFFFF">不能下载，提示网址不正确，但是网址是没有错误，估计是没法识别到吗？http://mp.weixin.qq.com/s/LIR1FtgROo0lWUSOWHZEMA
+<br><b>管理员回复:http://res.wx.qq.com/voice/getvoice?mediaid=MjM5NjAwNjUwMV8yNjUzNTgzMzg3
+把这个链接另存为MP3</b></th>
+<td align="center" bgcolor="#FFFFFF">09/15 08:06</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">蜻蜓FM</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">馨香</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅有太多收费了，如果能下载蜻蜓FM的节目就好了，有很多喜马拉雅没有的或收费的。<br><b>管理员回复:已经实现单个下载，正在实现批量下载。</b><br><b>管理员回复:蜻蜓fm批量下载已经上线欢迎使用。帮助文件还没来得及写。基本上和喜马拉雅下载一样的。</b></th>
+<td align="center" bgcolor="#FFFFFF">09/15 15:06</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">无法命名</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">至尊宝</th>
+<td align="center" bgcolor="#FFFFFF">win7系统在新建文本时保存文件含有unicode格式的字符，不能保存ANSI格式，只能保存UTF-8和unicode格式，但是命名不了，谢谢解答。<br><b>管理员回复:可能涉及到编码问题，请贴出网址以便于分析。</b></th>
+<td align="center" bgcolor="#FFFFFF">09/18 07:04</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">无法命名</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">至尊宝</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/13120911/album/2903665/，不能命名<br><b>管理员回复:测试在Win10和win7都能正常保存。可以从这里下载rename.bat
+http://jikexiazai.cn/rename.zip</b></th>
+<td align="center" bgcolor="#FFFFFF">09/18 12:06</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">真是太方便了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅呀</th>
+<td align="center" bgcolor="#FFFFFF">直接批量下载很方便，一会试一试改名<br><b>管理员回复:好用的话帮忙向朋友和同学推荐下吧。</b></th>
+<td align="center" bgcolor="#FFFFFF">09/20 10:09</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic2.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">太好了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">洛洛</th>
+<td align="center" bgcolor="#FFFFFF">网上就这可以下66666666666666 。我他妈找了好久才找到你 ！感谢
+</th>
+<td align="center" bgcolor="#FFFFFF">10/02 21:09</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">最近新的微信音频下载不了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">zq</th>
+<td align="center" bgcolor="#FFFFFF">http://mp.weixin.qq.com/s/I1DWEBqIXS9iv4k-46myEg
+这个音频无法下载<br><b>管理员回复:先下载这个链接吧。稍后解决http://res.wx.qq.com/voice/getvoice?mediaid=MzI0MzA1NjI0NF8yNjUwNzk5NjA5</b><br><b>管理员回复:已经解决了这个问题</b></th>
+<td align="center" bgcolor="#FFFFFF">10/11 08:07</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic3.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">下载微信公众号音频</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">感谢管理</th>
+<td align="center" bgcolor="#FFFFFF">下载微信公众号音频，显示找不到地址<br><b>管理员回复:请贴出 网址</b></th>
+<td align="center" bgcolor="#FFFFFF">10/19 08:00</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">下载文件格式不对</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">小马哥</th>
+<td align="center" bgcolor="#FFFFFF">下载下来的微信音频是.bin格式解压显示文件损坏？</th>
+<td align="center" bgcolor="#FFFFFF">10/25 23:03</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">m4a批量改名为mp3</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">play</th>
+<td align="center" bgcolor="#FFFFFF">.bat里 如果是 .m4a文件改成.mp3的话 会无法改名 估计是因为默认改后缀时会有提示 求解决方法</th>
+<td align="center" bgcolor="#FFFFFF">10/26 09:00</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">不错，这个不错已经打赏服务器费哈哈</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">行者悦途</th>
+<td align="center" bgcolor="#FFFFFF">不错，这个不错已经打赏服务器费哈哈。继续努力呀！</th>
+<td align="center" bgcolor="#FFFFFF">10/30 17:07</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">收费的音频下载不了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">balance</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/2987462/album/9998010<br><b>管理员回复:不支持收费的项目下载哈</b></th>
+<td align="center" bgcolor="#FFFFFF">11/03 11:09</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">微信公众号音频</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">DD</th>
+<td align="center" bgcolor="#FFFFFF">微信公众号音频也不能下载了。<br><b>管理员回复:不能下载请把具体公众号链接发出来</b></th>
+<td align="center" bgcolor="#FFFFFF">11/03 17:05</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">公众号音频下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">weifang333666</th>
+<td align="center" bgcolor="#FFFFFF">为什么下载的文件不是mP3格式，是bin，打不开<br><b>管理员回复:如果是后缀名是bin，手动改名试试</b></th>
+<td align="center" bgcolor="#FFFFFF">11/07 14:03</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">不能下载VIP</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">菜鸟</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅FM，无法下载付费的音频。</th>
+<td align="center" bgcolor="#FFFFFF">11/12 16:02</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">牛听听的资源能不能做个下载呢？</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">牛听听的资源能不能做个下载呢？</th>
+<td align="center" bgcolor="#FFFFFF">牛听听的资源能不能做个下载呢？</th>
+<td align="center" bgcolor="#FFFFFF">11/20 14:00</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">牛听听的资源能不能做个下载呢？</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">牛听听的资源能不能做个下载呢？</th>
+<td align="center" bgcolor="#FFFFFF">牛听听的资源能不能做个下载呢？跟喜马拉雅界面基本一样的，留言怎么发不了地址？</th>
+<td align="center" bgcolor="#FFFFFF">11/20 14:04</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">不能下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">风鹧</th>
+<td align="center" bgcolor="#FFFFFF">http://mp.weixin.qq.com/s/iK1oXmSy2yCH4dN2NvhhKw<br><b>管理员回复:http://res.wx.qq.com/voice/getvoice?mediaid=MzIwMzczNTQyMl8yMjQ3NDg3MTI0
+另存为mp3</b></th>
+<td align="center" bgcolor="#FFFFFF">11/27 00:00</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">公众号音频不能下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">米粒</th>
+<td align="center" bgcolor="#FFFFFF">公众号音频不能下载请老师指导</th>
+<td align="center" bgcolor="#FFFFFF">12/01 22:09</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">无法批量重命名</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">LZJDTQ</th>
+<td align="center" bgcolor="#FFFFFF">我下载了一部作品，并把文件名重命名的文本作成了BAT文件，但运行后只能重命名前三个文件，且原始文件未被删除，只有重复删掉前三个文件的命名规则才能继续重命名后面的文件，请问如何处理，谢谢！<br><b>管理员回复:留下具体链接以便分析，可能不是普遍问题</b></th>
+<td align="center" bgcolor="#FFFFFF">12/03 15:05</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">音质好差</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">羽凡</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅下载的音频一首歌不到一兆， 音质好差， 可以解决吗<br><b>管理员回复:这个应该解决不了，音质是喜马拉雅提供的。</b></th>
+<td align="center" bgcolor="#FFFFFF">12/20 18:06</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">公众号音频不能下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">萧飘逸雪</th>
+<td align="center" bgcolor="#FFFFFF">http://mp.weixin.qq.com/s/td61Flt-9iTvG4jG3cy31g<br><b>管理员回复:把下面的链接另存为mp3 
+http://res.wx.qq.com/voice/getvoice?mediaid=MzI1OTY2MzY5Ml8yMjQ3NDg0NzIy</b></th>
+<td align="center" bgcolor="#FFFFFF">12/25 14:29</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic3.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">微信公众号一个页面多个音频可以下载吗</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">Adam</th>
+<td align="center" bgcolor="#FFFFFF">微信公众号里面一个页面有多个音频，是不是只能下载第一个？想要下载全部呢？<br><b>管理员回复:你把具体地址贴出来我分析看看</b></th>
+<td align="center" bgcolor="#FFFFFF">01/03 00:07</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">蜻蜓FM 收费音频不能下载是吗？</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">sher</th>
+<td align="center" bgcolor="#FFFFFF">收费链接无法识别是正常的是吗？<br><b>管理员回复:收费链接不支持下载</b></th>
+<td align="center" bgcolor="#FFFFFF">01/11 17:28</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">搜索不到网页，喜马拉雅</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">哈哈哈</th>
+<td align="center" bgcolor="#FFFFFF">搜索不到网页，喜马拉雅 ，怎么回事</th>
+<td align="center" bgcolor="#FFFFFF">01/13 19:31</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">已经大赏</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">力谦学堂</th>
+<td align="center" bgcolor="#FFFFFF">已经按照页面扫描二维码向个人用户坤大赏1.68，但是输入网址，没有返回的下载链接<br><b>管理员回复:请把输入的网址粘贴进来</b></th>
+<td align="center" bgcolor="#FFFFFF">01/18 13:33</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">千聊可以支持吗</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">小明</th>
+<td align="center" bgcolor="#FFFFFF">啥时候能支持千聊下载  </th>
+<td align="center" bgcolor="#FFFFFF">01/25 16:45</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">打赏了，也下载不了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">火地岛</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/27891645/sound/7176246/<br><b>管理员回复:我试过，是可以下载的呢！</b></th>
+<td align="center" bgcolor="#FFFFFF">01/26 10:40</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">无法下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">雪碧</th>
+<td align="center" bgcolor="#FFFFFF">无法识别
+http://mp.weixin.qq.com/s/QnJo0utexinUPmD40TUF9g<br><b>管理员回复:把下面的链接另存为mp3 http://res.wx.qq.com/voice/getvoice?mediaid=MzA4MzE0NjE3Ml8yNjU1NDgxMjgx</b><br><b>管理员回复:在这里回复一下为啥有些下载不了。经测试，应该是服务器有些限制，本地用的很好。</b></th>
+<td align="center" bgcolor="#FFFFFF">01/29 14:09</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">下载问题</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">雪碧</th>
+<td align="center" bgcolor="#FFFFFF">这段发的公众号音频可以下载，以前发的都是地址错误，是不是时间长的链接失效了？不过在电脑上可以下载出来的。</th>
+<td align="center" bgcolor="#FFFFFF">01/29 23:54</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">微信公众号音频下载智能识别一个</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">氤氲</th>
+<td align="center" bgcolor="#FFFFFF">微信公众号一个页面里有一个音频一个视频，但是只能识别视频，不能识别音频<br><b>管理员回复:稍后会做增强欢迎把链接地址贴出来</b></th>
+<td align="center" bgcolor="#FFFFFF">01/30 18:00</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">地址不正确</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">雪碧</th>
+<td align="center" bgcolor="#FFFFFF">http://mp.weixin.qq.com/s/kdKTtynI2zzianY1L1XIVw
+急，谢谢老大。<br><b>管理员回复:http://res.wx.qq.com/voice/getvoice?mediaid=MzA4MzE0NjE3Ml8yNjU1NDgxMDM1另存为mp3</b></th>
+<td align="center" bgcolor="#FFFFFF">01/31 20:41</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic4.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">批量下载无法排列</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">排列找不到</th>
+<td align="center" bgcolor="#FFFFFF">批量下载无法排列。比如：1.2.3.6.8.5...打开后就是这样播放的。如果有解决的办法，请联系我q:3512947070.谢谢</th>
+<td align="center" bgcolor="#FFFFFF">02/05 14:51</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">好多老微信音频不能下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">秦！</th>
+<td align="center" bgcolor="#FFFFFF">http://mp.weixin.qq.com/s/v5tAFMwMb66bRxR9waENtA   提示没有输入正确的网址</th>
+<td align="center" bgcolor="#FFFFFF">02/07 11:26</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">微信公众号链接显示地址不正确</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">噢噢</th>
+<td align="center" bgcolor="#FFFFFF">http://mp.weixin.qq.com/s/JXci__0TOfVNlZdb39ikfg
+抱拳了</th>
+<td align="center" bgcolor="#FFFFFF">02/10 12:12</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">其他FM下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">三十二</th>
+<td align="center" bgcolor="#FFFFFF">有企鹅FM的批量下载的方法吗？</th>
+<td align="center" bgcolor="#FFFFFF">02/13 16:23</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic2.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">下载链接过多时</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">⑤x</th>
+<td align="center" bgcolor="#FFFFFF">得一个一个的点，希望把下载链接展示的地方html标签改一下，变成能直接复制链接的形式，然后就可以粘贴到idm批量下载了<br><b>管理员回复:可以支持迅雷批量下载，不用一个一个点的。</b></th>
+<td align="center" bgcolor="#FFFFFF">02/17 16:51</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">能批量下载荔枝的音频吗？</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">DA</th>
+<td align="center" bgcolor="#FFFFFF">管理员好，请问能批量下载荔枝的音频吗？<br><b>管理员回复:由于荔枝FM服务器限制，只能使用应用程序下载，网页下载受限！</b></th>
+<td align="center" bgcolor="#FFFFFF">02/22 11:34</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">现在碰到问题这里</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">管理员</th>
+<td align="center" bgcolor="#FFFFFF">右键没有那个选项.........没有全部用迅雷下载的那个选项<br><b>管理员回复:应该是你没有安装迅雷吧</b></th>
+<td align="center" bgcolor="#FFFFFF">02/25 14:00</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">想用aria2c下载，需要链接和文件名分开</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">小折腾</th>
+<td align="center" bgcolor="#FFFFFF">用aria2c很简单，一行命令可以
+能不能帮我单开一个能把链接和文件名分开的网页，谢谢！</th>
+<td align="center" bgcolor="#FFFFFF">02/27 12:29</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">有的微信公众号下载不了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">dduke</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ecustpress.cn/qr/19100,这是微信公众号的音频点复制给的链接，这种模式的看来下不来</th>
+<td align="center" bgcolor="#FFFFFF">03/07 20:22</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">收费项目无法下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">Stefan</th>
+<td align="center" bgcolor="#FFFFFF">收费项目无法下载                     </th>
+<td align="center" bgcolor="#FFFFFF">03/08 21:24</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">改不了名</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">金色</th>
+<td align="center" bgcolor="#FFFFFF">无法批量改名，运行改名程序后只能改几个节目的名称。</th>
+<td align="center" bgcolor="#FFFFFF">03/17 23:35</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">无法下载喜马拉雅音频</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">echo</th>
+<td align="center" bgcolor="#FFFFFF">http://ximalaya.com/54180960/sound/77100781<br><b>管理员回复:使用专辑下载方式可以下载的。
+专辑地址：
+http://www.ximalaya.com/54180960/album/13572598/</b></th>
+<td align="center" bgcolor="#FFFFFF">03/19 17:46</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">下载碰到问题</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">ricky</th>
+<td align="center" bgcolor="#FFFFFF">http://mp.weixin.qq.com/s/vGYTp6zT69gfVF8YdAOaNw，这里面的无法下载，提示没有找到正确的下载地址。</th>
+<td align="center" bgcolor="#FFFFFF">03/25 09:53</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">挺好的</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">河马</th>
+<td align="center" bgcolor="#FFFFFF">已经打赏，作者努力，我们可以合作的</th>
+<td align="center" bgcolor="#FFFFFF">04/05 20:30</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">微信公众号音频无法下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">lxl</th>
+<td align="center" bgcolor="#FFFFFF">http://mp.weixin.qq.com/s/Uv-Hhq1wTm6oqi0BnhaFBQ</th>
+<td align="center" bgcolor="#FFFFFF">04/06 21:50</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">不能下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">云</th>
+<td align="center" bgcolor="#FFFFFF">刚才扫描完二维码付费，但是链接不能用啊<br><b>管理员回复:你贴上链接来看看</b></th>
+<td align="center" bgcolor="#FFFFFF">04/13 10:42</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">你好下载碰到难题</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">两小无猜网</th>
+<td align="center" bgcolor="#FFFFFF">http://m.lxwc.com.cn/wucai-1235576-1.html
+http://m.lxwc.com.cn/wucai-1237230-1.html<br><b>管理员回复:这位朋友打赏了，但是网站现在并不支持 两小无猜网。</b></th>
+<td align="center" bgcolor="#FFFFFF">04/13 14:50</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">能下载非常棒</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">黑邺司</th>
+<td align="center" bgcolor="#FFFFFF">需要去喜马拉雅下载音频，特来打赏支持！</th>
+<td align="center" bgcolor="#FFFFFF">04/18 21:36</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅免费节目不能下载啊</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">老梗</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅免费节目不能下载啊<br><b>管理员回复:你把连接贴上来看看</b></th>
+<td align="center" bgcolor="#FFFFFF">05/09 15:41</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">下载不了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">路人甲</th>
+<td align="center" bgcolor="#FFFFFF">吊诡的时光下载不了....<br><b>管理员回复:我试过这个专辑，可以下的啊
+http://www.ximalaya.com/2642819/album/3198274/</b></th>
+<td align="center" bgcolor="#FFFFFF">05/09 19:33</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">cVsmkuyYOev</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">Judi</th>
+<td align="center" bgcolor="#FFFFFF">fdVa7C https://www.genericpharmacydrug.com</th>
+<td align="center" bgcolor="#FFFFFF">05/12 20:17</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅收费的怎么下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">库神</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅收费的怎么下载</th>
+<td align="center" bgcolor="#FFFFFF">05/13 11:33</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">蜻蜓付费音频怎么下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">金戈</th>
+<td align="center" bgcolor="#FFFFFF">蜻蜓付费音频怎么下载？我已经购买过了，只能在线听，有没有办法下载呢</th>
+<td align="center" bgcolor="#FFFFFF">05/16 14:12</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">下载碰到问题</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">wei</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/renwen/foxue/12469044/
+显示没有找到正确的下载地址！</th>
+<td align="center" bgcolor="#FFFFFF">05/17 08:59</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅的不能下载啦</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅的不能下载啦</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅的不能下载啦</th>
+<td align="center" bgcolor="#FFFFFF">05/17 09:49</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅链接格式更新</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">Dr Wu</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅的连接格式更新啦，期待跟上
+
+http://www.ximalaya.com/youshengshu/lishixiaoshuo/3150142/</th>
+<td align="center" bgcolor="#FFFFFF">05/17 13:54</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅的链接格式变了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">笑丶忘歌</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅的链接格式变了，我看了一下发现跟不是album这样的了，而是变成一个个分类了，求管理员更新~</th>
+<td align="center" bgcolor="#FFFFFF">05/17 17:59</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">网友</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅以前好使，现在不能下了？
+http://www.ximalaya.com/ertong/huiben/4700027/
+求版主升级技术
+</th>
+<td align="center" bgcolor="#FFFFFF">05/18 11:00</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">无法下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">小白</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/ertong/gushi/9518650/48932245
+下载不了，显示提示：没有找到正确的下载地址，请检查你输入的网址！
+http://www.ximalaya.com/ertong/gushi/9518650/48932245/也下载不了</th>
+<td align="center" bgcolor="#FFFFFF">05/18 13:52</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">微信、喜马拉雅音频下载问题</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">莎德星</th>
+<td align="center" bgcolor="#FFFFFF">搞了几个小时了，以前还可以下载自己上传的喜马拉雅音频，因为写文章要用到，今天就怎么弄都没成功
+这个是微信的https://mp.weixin.qq.com/s/6ssr7EmJkKZaViH5py49og
+这个是喜马拉雅的http://www.ximalaya.com/youshengshu/lishixiaoshuo/15701519/</th>
+<td align="center" bgcolor="#FFFFFF">05/18 15:02</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">无法下载了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">ccc</th>
+<td align="center" bgcolor="#FFFFFF">鬼王的金牌宠妃免费的，下载不了
+</th>
+<td align="center" bgcolor="#FFFFFF">05/18 15:40</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">下载不了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">路人甲</th>
+<td align="center" bgcolor="#FFFFFF">好像不是?page=1了,变成了/p1/</th>
+<td align="center" bgcolor="#FFFFFF">05/18 16:51</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅网站更新了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">WZC</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅专辑地址变了  下载不了了</th>
+<td align="center" bgcolor="#FFFFFF">05/18 18:03</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">怎么不能下载啦</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">桃乐丝</th>
+<td align="center" bgcolor="#FFFFFF">复制链接说找不到啊~~·</th>
+<td align="center" bgcolor="#FFFFFF">05/19 08:35</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">无法下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">掌心的水</th>
+<td align="center" bgcolor="#FFFFFF">付款了为啥还是下载不了喜马拉雅音频</th>
+<td align="center" bgcolor="#FFFFFF">05/19 09:29</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">音频下载不了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">乙二艺</th>
+<td align="center" bgcolor="#FFFFFF">拷贝进去地址一更新就说网址无效</th>
+<td align="center" bgcolor="#FFFFFF">05/19 11:53</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">没有找到正确的下载地址</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">如题</th>
+<td align="center" bgcolor="#FFFFFF">没有找到正确的下载地址</th>
+<td align="center" bgcolor="#FFFFFF">05/19 19:01</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">老办法行不通了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">人人</th>
+<td align="center" bgcolor="#FFFFFF">比如
+http://www.ximalaya.com/lishi/lishi/3703879/42857655现在的格式都是这样的,,系统认不出????</th>
+<td align="center" bgcolor="#FFFFFF">05/19 21:35</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic2.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">已经知道怎么下了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">人人</th>
+<td align="center" bgcolor="#FFFFFF">管理员好,,,已经知道怎么下了   关于地址识别不出来的问题,,直接下专辑里面的是可以下的,这种问题大家一般不会注意,可能会重复问,,您可以把这个方法表现在下载示意图里,,这样您就不用重复回答类似的问题了</th>
+<td align="center" bgcolor="#FFFFFF">05/19 23:13</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">下载不了了哭唧唧</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">吃可爱多长大的</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/jiaoyu/lishi/7920021/这个上周还能下载的现在下载不了了。能帮下忙吗谢谢了</th>
+<td align="center" bgcolor="#FFFFFF">05/20 16:08</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">没明白楼上的意思</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">人人那位网友</th>
+<td align="center" bgcolor="#FFFFFF">亲~你说直接下载专辑里的可以下，我就从专辑里点进去，复制其中一个地址，也是下不了的 不知你怎么操作的 </th>
+<td align="center" bgcolor="#FFFFFF">05/20 16:50</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">找不到网址</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">gracefcp</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/ertong/wenxue/15731772/89648857</th>
+<td align="center" bgcolor="#FFFFFF">05/20 17:21</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic3.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">回答问我问题的网友</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">人人</th>
+<td align="center" bgcolor="#FFFFFF">意思是,,,你注意看,每个资源都像是一条线,喜玛拉雅改了新的,不过旧的他忘记改了,,,
+旧的网址就是我们需要的还在专辑里,
+你找到专辑的那个页面,然后从专辑的那个页面里找到需要的资源,,(千万不要点进去,不然就上当了),,你找到后右键点击需要的那个资源名称,,然后属性,,你会发现属性里的地址还是老地址,,复制这里面的就可以下载 ,,,,用这个稍微绕个弯的方法,我已经下载很多东西了,完全没有任何问题,,,,,,不用管理员升级这么麻烦了,改一下下载示意图就可以了</th>
+<td align="center" bgcolor="#FFFFFF">05/20 21:44</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic3.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">回答问我问题的网友</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">人人</th>
+<td align="center" bgcolor="#FFFFFF">意思是,,,你注意看,每个资源都像是一条线,喜玛拉雅改了新的,不过旧的他忘记改了,,,
+旧的网址就是我们需要的还在专辑里,
+你找到专辑的那个页面,然后从专辑的那个页面里找到需要的资源,,(千万不要点进去,不然就上当了),,你找到后右键点击需要的那个资源名称,,然后属性,,你会发现属性里的地址还是老地址,,复制这里面的就可以下载 ,,,,用这个稍微绕个弯的方法,我已经下载很多东西了,完全没有任何问题,,,,,,不用管理员升级这么麻烦了,改一下下载示意图就可以了</th>
+<td align="center" bgcolor="#FFFFFF">05/20 21:44</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic3.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">回答问我问题的网友</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">人人</th>
+<td align="center" bgcolor="#FFFFFF">意思是,,,你注意看,每个资源都像是一条线,喜玛拉雅改了新的,不过旧的他忘记改了,,,
+旧的网址就是我们需要的还在专辑里,
+你找到专辑的那个页面,然后从专辑的那个页面里找到需要的资源,,(千万不要点进去,不然就上当了),,你找到后右键点击需要的那个资源名称,,然后属性,,你会发现属性里的地址还是老地址,,复制这里面的就可以下载 ,,,,用这个稍微绕个弯的方法,我已经下载很多东西了,完全没有任何问题,,,,,,不用管理员升级这么麻烦了,改一下下载示意图就可以了</th>
+<td align="center" bgcolor="#FFFFFF">05/20 21:44</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">电脑抽了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">人人</th>
+<td align="center" bgcolor="#FFFFFF">电脑卡壳了,抽了,害我不小心发了三遍,,管理员我不是故意的<br><b>管理员回复:你的方法是可以的谢谢</b></th>
+<td align="center" bgcolor="#FFFFFF">05/20 21:47</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic3.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">单集可以下载批量不行</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">我是卖报的小行家</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/youshengshu/xuanyi/249504/p2/
+确实这种链接下载不了了但是单集还是可以下载的，老哥们稳住啊，坐等管理员升级嘛,我建议开个单独开个收费模式，服务在优化好一点尤其是喜马拉雅这边~~~~~我准备打赏去了 拜拜
+~~~~~~~~</th>
+<td align="center" bgcolor="#FFFFFF">05/20 22:32</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马下不了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">天梦</th>
+<td align="center" bgcolor="#FFFFFF">喜马更新了。兄弟们现在全都不下了，麻烦处理下</th>
+<td align="center" bgcolor="#FFFFFF">05/20 23:13</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">支持网址格式变了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">fz</th>
+<td align="center" bgcolor="#FFFFFF">现在网址格式变成这样了，http://www.ximalaya.com/lishi/lishi/3703879/42857655，咱们网站不支持这种格式了</th>
+<td align="center" bgcolor="#FFFFFF">05/21 09:15</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅下载不了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">哼哈</th>
+<td align="center" bgcolor="#FFFFFF">前几天开始，喜马拉雅的地址输进去，就显示没有找到正确的下载地址</th>
+<td align="center" bgcolor="#FFFFFF">05/21 09:35</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">批量的也是可以下的</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">人人</th>
+<td align="center" bgcolor="#FFFFFF">真的没问题 ,,,最近一直在批量下载呀,,,同样下的还是很爽的</th>
+<td align="center" bgcolor="#FFFFFF">05/21 10:37</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅下不了啦</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅</th>
+<td align="center" bgcolor="#FFFFFF">前几天开始，喜马拉雅的地址输进去，就显示没有找到正确的下载地址</th>
+<td align="center" bgcolor="#FFFFFF">05/21 17:58</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅改版了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅改版了</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅改版了,啥时候解析也更新啊</th>
+<td align="center" bgcolor="#FFFFFF">05/21 18:28</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅下载问题	</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">zhe</th>
+<td align="center" bgcolor="#FFFFFF">现在喜马拉雅的音频下载不了了，格式变了</th>
+<td align="center" bgcolor="#FFFFFF">05/21 19:53</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">楼上的同学~~</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">还是没法下啊 </th>
+<td align="center" bgcolor="#FFFFFF">按你说的点了属性，链接跟单点的链接对比是一样的，并没有不同哦~都是有 ertong/gushi/ 这样的~~</th>
+<td align="center" bgcolor="#FFFFFF">05/21 23:49</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅下载不了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">APPLE</th>
+<td align="center" bgcolor="#FFFFFF">求救，输入喜马拉雅网址http://www.ximalaya.com/waiyu/yingyu/5820102/，点更新下载链接，显示没有找到正确下载地址
+</th>
+<td align="center" bgcolor="#FFFFFF">05/22 09:13</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">无法下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">奎奎</th>
+<td align="center" bgcolor="#FFFFFF">超过200就无法下载，根据上面教导的，出现了点击下载的字样，但是没有链接。</th>
+<td align="center" bgcolor="#FFFFFF">05/22 11:19</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅链接不能下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">APPLE</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/waiyu/yingyu/5820102/，此链接不可下载，显示没有找到正确下载地址，求方法，谢谢<br><b>管理员回复:输入这个网址下载http://www.ximalaya.com/album/5820102/</b></th>
+<td align="center" bgcolor="#FFFFFF">05/22 11:20</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅下载不下来了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">胡萝比</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/renwen/xinling/5939130/
+喜马拉雅的音频格式改变了，比如上面这个<br><b>管理员回复:不好意思，最近没看到。争取今天更新。</b><br><b>管理员回复:输入http://www.ximalaya.com/album/5939130/ 用这种格式下载</b></th>
+<td align="center" bgcolor="#FFFFFF">05/22 11:30</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">音频不能下载的问题</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">乙二</th>
+<td align="center" bgcolor="#FFFFFF">我找到解决办法了，其实页面上有提示哈</th>
+<td align="center" bgcolor="#FFFFFF">05/22 13:11</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅改版了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">自信</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅于2018年7月17日改版了，用之前的方法下载不了啦
+</th>
+<td align="center" bgcolor="#FFFFFF">05/22 14:49</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅批量下载问题</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">zero</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅更新地址后超过200个文件的怎么识别啊？批量下载的便利没有了？<br><b>管理员回复:5月22日晚更新，支持最新格式批量下载。</b></th>
+<td align="center" bgcolor="#FFFFFF">05/22 21:38</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">为管理疯狂打CALL</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">大兄弟</th>
+<td align="center" bgcolor="#FFFFFF">兄弟们~可以批量下载了，打赏走一波~</th>
+<td align="center" bgcolor="#FFFFFF">05/23 11:17</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">还是没有解决好</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">路人甲</th>
+<td align="center" bgcolor="#FFFFFF">分页的下载每页第一个都没有,后面多出两个&quot;纸短情长.mp3&quot;和&quot;张云雷 - 探清水河(吉他版).mp3&quot;,等解决完打赏走一波</th>
+<td align="center" bgcolor="#FFFFFF">05/23 12:13</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">还是没有解决好</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">路人甲</th>
+<td align="center" bgcolor="#FFFFFF">分页的下载每页第一个都没有,后面多出两个&quot;纸短情长.mp3&quot;和&quot;张云雷 - 探清水河(吉他版).mp3&quot;,等解决完打赏走一波<br><b>管理员回复:确实有问题，已经解决</b></th>
+<td align="center" bgcolor="#FFFFFF">05/23 12:13</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic2.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">下载问题解决</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">乙二</th>
+<td align="center" bgcolor="#FFFFFF">必须打赏。。。。。。。。。。。</th>
+<td align="center" bgcolor="#FFFFFF">05/23 14:49</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">必须打赏</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">必须打赏</th>
+<td align="center" bgcolor="#FFFFFF">必须打赏,必须打赏,必须打赏</th>
+<td align="center" bgcolor="#FFFFFF">05/25 18:33</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic2.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">下载有问题</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">路人甲</th>
+<td align="center" bgcolor="#FFFFFF">唉,现在每页之能下载27章了</th>
+<td align="center" bgcolor="#FFFFFF">05/25 22:19</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">浏览器迅雷问题</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">疯流</th>
+<td align="center" bgcolor="#FFFFFF">使得傲游浏览器，右键菜单没有迅雷全部下载，切换内核后，仍然只能下载一个。服务器能否直接显示网址，而不是锚文本呢？</th>
+<td align="center" bgcolor="#FFFFFF">05/26 22:03</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅 最后3集 都没有</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">管理员</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅 最后3集 都没有<br><b>管理员回复:已经解决了</b></th>
+<td align="center" bgcolor="#FFFFFF">05/27 19:35</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic3.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">您好，在重命名的时候希望加上数字编号。谢谢。</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">您好</th>
+<td align="center" bgcolor="#FFFFFF">您好，在重命名的时候希望加上数字编号。因为有些网上的节目没有事先编号，下载下来的经过重命名的节目不能顺序播放。谢谢！<br><b>管理员回复:增强中。。。</b><br><b>管理员回复:<span class="red">已经解决了。解决了排序和一些重命名不成功的问题</span></b></th>
+<td align="center" bgcolor="#FFFFFF">05/28 09:52</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅自购付费音频有办法下载吗</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">vnet</th>
+<td align="center" bgcolor="#FFFFFF">自己买了喜马拉雅付费的音频，但是只能在手机上播放，不知道有办法下载吗</th>
+<td align="center" bgcolor="#FFFFFF">05/31 10:59</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">重命名问题</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">橙子</th>
+<td align="center" bgcolor="#FFFFFF">小说章节名称前面的数字和章节序号是反的。。。例如章节名称前面序号是从800-1 可小说的集数却是从1-800  下载下来排序是按800-1排的  放到播放器里还得倒着听。。。<br><b>管理员回复:这个你贴上链接来看看吧，可能是少数的吧</b></th>
+<td align="center" bgcolor="#FFFFFF">06/01 15:07</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">重命名反的,续楼上</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">路人甲</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/youshengshu/4756811/
+首先表示支持这个功能,这是地址,还有很多有声书也是反的<br><b>管理员回复:喜马拉雅有两种排序格式。fix中。。。</b><br><b>管理员回复:<span class="red">解决了，新增正序反序</span></b></th>
+<td align="center" bgcolor="#FFFFFF">06/03 10:45</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">添加序号能不能从1开始啊</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">路人甲</th>
+<td align="center" bgcolor="#FFFFFF">强迫症很难接受，或者添加个文本框自由设置起始位置！<br><b>管理员回复:其实昨晚就解决了的，但是服务器抽风了。现在应该好了。</b></th>
+<td align="center" bgcolor="#FFFFFF">06/05 08:35</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">继楼上</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">路人甲</th>
+<td align="center" bgcolor="#FFFFFF">其实添加个文本框自己输入起始的号码的参数比较好,一来可以轻松应对服务器的各种抽风,二来如果有特殊需求的,也可以灵活一点,省得在EXCEL里面修改bat</th>
+<td align="center" bgcolor="#FFFFFF">06/05 16:42</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅采集有问题</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">123</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅音频采集地址有的是其他不相干的还有有的级数不对应跑到下面去了</th>
+<td align="center" bgcolor="#FFFFFF">06/06 10:32</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">蜻蜓fm没有找到正确的下载地址，请检查你输入的网址！</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">电脑用户</th>
+<td align="center" bgcolor="#FFFFFF">http://www.qingting.fm/channels/216713  这个链接 没有找到正确的下载地址，请检查你输入的网址！  没法下载   球帮助<br><b>管理员回复:这个是付费节目，不敢支持。</b></th>
+<td align="center" bgcolor="#FFFFFF">06/07 14:52</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">200以后</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">BSZXQ</th>
+<td align="center" bgcolor="#FFFFFF">200集以后，只能P1，2，3.每页下载27-28集吗？<br><b>管理员回复:不是下载下来30集吗？暂时只能下载这么多</b></th>
+<td align="center" bgcolor="#FFFFFF">06/08 16:54</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">为什么爱情公寓下了MP3播不了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">刘玉婷</th>
+<td align="center" bgcolor="#FFFFFF">http://www.qingting.fm/channels/132030/programs/3604163<br><b>管理员回复:http://od.qingting.fm/vod/00/00/0000000000000000000026525824_24.m4a 可以下载哦</b></th>
+<td align="center" bgcolor="#FFFFFF">06/15 08:49</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">只能解析出10个</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">小马哥</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/youshengshu/11061419/
+正序和倒序只能解析出10个，分页加P1也不行。<br><b>管理员回复:十集过后都是收费项目了</b></th>
+<td align="center" bgcolor="#FFFFFF">06/15 10:32</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">V1.6.0版本，如果标题中有“|”或者“;”的都不能下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">鑫</th>
+<td align="center" bgcolor="#FFFFFF">V1.6.0版本，如果标题中有“|”或者“;”的都不能下载。
+比如：十点读书http://www.ximalaya.com/renwen/265897
+
+988主播应犹：卓文君 | 渴望爱情，也要保持清醒 - 陈大右
+172主播Bobo:你为什么太在乎别人的评价－武志红</th>
+<td align="center" bgcolor="#FFFFFF">06/18 10:47</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic2.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">再补充一点，V1.6.0版本，下载后的曲目无序号。多谢！</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">鑫</th>
+<td align="center" bgcolor="#FFFFFF">http://www.ximalaya.com/renwen/265897<br><b>管理员回复:我尝试过前两百集是可以正常下载的。</b></th>
+<td align="center" bgcolor="#FFFFFF">06/18 12:12</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">第一次见sorted 留言板</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">智障</th>
+<td align="center" bgcolor="#FFFFFF">码一下哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈</th>
+<td align="center" bgcolor="#FFFFFF">06/18 15:29</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">有个小建议</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">路人甲</th>
+<td align="center" bgcolor="#FFFFFF">自动添加序号确实是极好的,但能不能在序号前面跟据最多章节数自动补位N个0,因为用dos copy命令复制文件是很快的,但是我音响的播放顺序是先拷贝的先播放,估计很多人也和我一样,如果没有补位的话顺序有多乱你可以cd到目录dir /b看看,当然不加也无伤大雅,我也可以在EXCEL中用函数加,就是稍微麻烦一点,不过话说回来能一步到位就更好了</th>
+<td align="center" bgcolor="#FFFFFF">06/22 11:07</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">您好，请问有办法下载得到APP的音频？</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">得到</th>
+<td align="center" bgcolor="#FFFFFF">您好，请问有办法下载得到APP的音频？</th>
+<td align="center" bgcolor="#FFFFFF">06/28 18:37</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">V1.6.0版本，如果标题中有“|”或者“;”的都不能下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">鑫</th>
+<td align="center" bgcolor="#FFFFFF">V1.6.0版本，如果标题中有“|”或者“;”（不是：）的都不能下载。
+（标题中有“：”的可以下） 
+
+比如：
+十点读书http://www.ximalaya.com/renwen/265897 以下两个都不能下载。
+988主播应犹：卓文君 | 渴望爱情，也要保持清醒 - 陈大右 
+172主播Bobo:你为什么太在乎别人的评价－武志红</th>
+<td align="center" bgcolor="#FFFFFF">06/28 20:54</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic5.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">用IE解析不了</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">网友</th>
+<td align="center" bgcolor="#FFFFFF">现在似乎是使用IE浏览器或者其它浏览器的兼容模式不能解析下载，只有在极速模式下，才能解析下载，但是迅雷右键的批量下载链接，只能在IE浏览器或者兼容模式下才能用，极速模式下，就没有这个批量下载选项。
+能解析的不能使用批量下载，能批量下载的IE不能解析。<br><b>管理员回复:用搜狗浏览器试试看</b></th>
+<td align="center" bgcolor="#FFFFFF">07/04 10:06</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">无法下载专辑</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">彭十六</th>
+<td align="center" bgcolor="#FFFFFF">打不开迅雷下载链接，只能是一个一个打下载太浪费时间<br><b>管理员回复:试下搜狗浏览器吧，我实测可以用</b></th>
+<td align="center" bgcolor="#FFFFFF">07/05 23:41</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">卸载公众号音频</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">守时者</th>
+<td align="center" bgcolor="#FFFFFF">我把含有音频的公众号文章链接输入后，总是显示“请输入正确的公众号文章网址”。我是通过“复制链接”粘贴过来的，为什么不对呢？</th>
+<td align="center" bgcolor="#FFFFFF">07/08 09:26</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">改名字乱码</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">dono</th>
+<td align="center" bgcolor="#FFFFFF">运行Rename.bat  名字都乱码  请指教</th>
+<td align="center" bgcolor="#FFFFFF">07/09 13:50</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">求开通已付费节目下载</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">AB</th>
+<td align="center" bgcolor="#FFFFFF">希望能开通已经付费的节目批量下载，原理应该是一样的吧~</th>
+<td align="center" bgcolor="#FFFFFF">07/12 15:15</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic1.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅的M4a音质好，可是下载的mp3音质差</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">guoreason</th>
+<td align="center" bgcolor="#FFFFFF">喜马拉雅的M4a音质好，可是下载的mp3音质差。能不能直接下载m4a格式的，不要转换？</th>
+<td align="center" bgcolor="#FFFFFF">07/12 21:56</th>
+</tr>
+<tr>
+<td align="center" bgcolor="#FFFFFF"><img src="face/pic2.gif" width="20" height="20" /></th>
+<td align="center" bgcolor="#FFFFFF">玛域姑娘下载不下来</th>
+</td>
+<td align="center" bgcolor="#FFFFFF">梓菡 memory</th>
+<td align="center" bgcolor="#FFFFFF">https://mp.weixin.qq.com/s/SwxVfrRgcxDRFX35XwWTJA</th>
+<td align="center" bgcolor="#FFFFFF">07/15 00:27</th>
+</tr>
+</table>
+
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="5"></td>
+  </tr>
+</table>
+<table width="980" border="0" align="center" cellpadding="5" cellspacing="1" bgcolor="#B3B3B3">
+  <tr>
+    <td height="25" align="center" bgcolor="#EBEBEB"><a href="guestbook.html">查看留言</a>&nbsp;|&nbsp;<a href="guestbook.html?tj=add">添加留言</a>&nbsp;|&nbsp;<a href="guestbook.html?tj=login">留言管理</a>&nbsp;|&nbsp;</td>
+  </tr>
+</table>
+
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="5"></td>
+  </tr>
+</table>
+
+ 
+<div style = "display:none" id="reply">
+<form  name="form6" method="post" action="" style=" margin-top:5px;">
+ <table width="1000" border="0" align="center" cellpadding="5" cellspacing="1" bgcolor="#B3B3B3">
+  <tr>
+    <td colspan="3" align="center" bgcolor="#EBEBEB" class="font">回复留言</td>
+  </tr>
+  <tr>
+    <td colspan="3" bgcolor="#FFFFFF" class="font">
+      <input name="reply_id" type="text" id="reply_id" size="6"/>
+	  <textarea name="reply_content" rows="5" cols="80" style="resize: none;"></textarea>
+	</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center" valign="top" bgcolor="#FFFFFF" class="font">
+    <input type="submit" name="submit6" value="确定" />
+  </tr>
+</table>
+</form>
+</div>
+<div class="footer">
+             
+                          &copy;1984  <A href="//v.choong.net/">乐哥在线</A>  Choong.net 版权所有 <a href="mailto:me@choong.net">联系我们</A>			
+
+</div> 
+</body>
+</html>
