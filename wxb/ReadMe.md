@@ -1,4 +1,4 @@
-# [引用](https://github.com/taoste/Hello-World/blob/master/Music/吴晓波：历代经济变革得失/Readme.md):吴晓波系列讲座《[**历代经济变革得失**](https://v.choong.net/wxb/)》
+# [引用](https://github.com/taoste/Hello-World/blob/master/Music/吴晓波：历代经济变革得失/Readme.md):吴晓波系列讲座《[**历代经济变革得失**](https://v.choong.net/wxb/)》【视频&音频】
 
 - [**极客下载**](http://jikexiazai.cn/) : 
 
