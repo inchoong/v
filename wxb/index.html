@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>吴晓波系列讲座《历代经济变革得失》</title>
-
+    <link rel="stylesheet" href="../QPlayer/css/player.css"><!-- 网页悬浮音乐播放器 -->
 <style type="text/css">
 
 	/* Back to top*/
@@ -80,6 +80,69 @@
 	
 <footer><a href="#top" id="back-to-top" title="返回顶层"></a></footer>
 
+	  <!-- 网页悬浮音乐播放器 -->
+   <div id="QPlayer">
+<div id="pContent">
+   <div id="player">
+   	<span class="cover"></span>
+   	<div class="ctrl">
+   		<div class="musicTag marquee">
+   			<strong>Title</strong>
+   			 <span> - </span>
+   			<span class="artist">Artist</span>
+   		</div>
+   		<div class="progress">
+   			<div class="timer left">0:00</div>
+   			<div class="contr">
+   				<div class="rewind icon"></div>
+   				<div class="playback icon"></div>
+   				<div class="fastforward icon"></div>
+   			</div>
+   			<div class="right">
+   				<div class="liebiao icon"></div>
+   			</div>
+   		</div>
+   	</div>
+   </div>
+   <div class="ssBtn">
+           <div class="adf"></div>
+   </div>
+</div>
+<ol id="playlist"></ol>
+</div>
+
+<script src="../QPlayer/js/jquery.min.js"></script>
+<script src="../QPlayer/js/jquery.marquee.min.js"></script>
+
+<script>
+ var	playlist = [
+     {title:"研究中国的方法",artist:"吴晓波：历代经济变革得失",mp3:"../wxb/mp3/1.mp3",cover:"http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",},
+     {title:"管仲变法：中国式改革思想的形成(上)",artist:"吴晓波：历代经济变革得失",mp3:"../wxb/mp3/2.mp3",cover:"http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",},
+     {title:"商鞅变法：中国式改革思想的形成下",artist:"吴晓波：历代经济变革得失",mp3:"../wxb/mp3/3.mp3",cover:"http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",},
+     {title:"汉武帝变法",artist:"吴晓波：历代经济变革得失",mp3:"../wxb/mp3/4.mp3",cover:"http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",},
+     {title:"王莽变法",artist:"吴晓波：历代经济变革得失",mp3:"../wxb/mp3/5.mp3",cover:"http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",},
+     {title:"刘晏变法",artist:"吴晓波：历代经济变革得失",mp3:"../wxb/mp3/6.mp3",cover:"http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",},
+     {title:"王安石变法",artist:"吴晓波：历代经济变革得失",mp3:"../wxb/mp3/7.mp3",cover:"http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",},
+     {title:"明清停滞",artist:"吴晓波：历代经济变革得失",mp3:"../wxb/mp3/8.mp3",cover:"http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",},
+     {title:"李鸿章变法",artist:"吴晓波：历代经济变革得失",mp3:"../wxb/mp3/9.mp3",cover:"http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",},
+     {title:"孔宋变法",artist:"吴晓波：历代经济变革得失",mp3:"../wxb/mp3/10.mp3",cover:"http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",},
+     {title:"陈云变法",artist:"吴晓波：历代经济变革得失",mp3:"../wxb/mp3/11",cover:"http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",},
+     {title:"改革开放",artist:"吴晓波：历代经济变革得失",mp3:"../wxb/mp3/12.mp3",cover:"http://p4.music.126.net/KLw_TLTRUe9pClPv4vlEtQ==/936783906865219.jpg?param=106x106",},
+  ];  
+ var isRotate = true;
+ var autoplay = false;
+</script>
+<script src="../QPlayer/js/player.js"></script>
+<script>
+
+function bgChange(){
+   var lis= $('.lib');
+   for(var i=0; i<lis.length; i+=2)
+   lis[i].style.background = 'rgba(246, 246, 246, 0.5)';
+}
+window.onload = bgChange;
+</script> <!-- 网页悬浮音乐播放器 -->
+	 
 </body>
 
 <script src="js/jquery-2.1.4.min.js"></script>
