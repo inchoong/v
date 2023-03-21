@@ -1,0 +1,128 @@
+html,
+body {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    font-size: 12px;
+    font-family: "Microsoft Yahei";
+    color: #333;
+}
+html,
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select,
+button,
+hr,
+blockquote,
+pre {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: bold;
+    line-height: 1.2;
+}
+ul,
+ol,
+dl {
+    list-style-type: none;
+}
+fieldset,
+img {
+    border: none;
+}
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    empty-cells: show;
+}
+caption,
+th {
+    text-align: left;
+    font-weight: normal;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th {
+    font-style: normal;
+    font-weight: normal;
+}
+input,
+select,
+textarea,
+button {
+    font-size: 100%;
+    vertical-align: baseline;
+    *vertical-align: middle;
+    outline: none;
+    border:none;
+}
+textarea {
+    vertical-align: top;
+}
+img {
+    vertical-align: middle;
+}
+em,
+i {
+    font-style: normal;
+}
+ins {
+    text-decoration: underline;
+}
+del {
+    text-decoration: line-through;
+}
+q:before,
+q:after {
+    content: "";
+}
+hr {
+    margin: 4px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+    _display: block;
+    _margin: -5px 0;
+    _font-size: 0;
+    _line-height: 0;
+}
+a {
+    text-decoration: none;
+}
+a:active {
+    opacity: .7;
+}
+.flex{
+    display: flex;
+}

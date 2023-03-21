@@ -1,0 +1,372 @@
+a{ text-decoration:none;}
+.flex{
+    display: flex;
+}
+.flex-center{
+    display: flex;
+    align-items: center;
+}
+.desktop{
+    color: #fff;
+    background-color: #fff;
+}
+.desktop .fixed-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+.desktop .fixed-bg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.desktop .fixed-main{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+.desktop .fixed-main .layout-right{
+    margin-left: 68vh;
+}
+.desktop .section{
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+}
+.desktop .layout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desktop .layout.col{
+    flex-direction: column;
+}
+.desktop .layout-bottom{
+    margin-top: 4vh;
+}
+.desktop .layout-left{
+    margin-right: 38vw;
+}
+.desktop .app-info{
+    width: 36vh;
+}
+.desktop .brand .logo{
+    width: 10vh;
+    height: 10vh;
+    margin-right: 0.5rem;
+}
+.desktop .brand .app-name{
+    font-size: 3vh;
+    margin-bottom: 0.3rem;
+}
+.desktop .brand .app-slogn{
+    font-size: 2vh;
+}
+.desktop .subject{
+    margin-top: 7vh;
+    color: rgb(244, 219, 47);
+    font-size: 4vh;
+    font-weight: bold;
+    text-align: left;
+    transition: 0.2s opacity;
+    width: auto;
+    height: 5vh;
+    position: relative;
+}
+.desktop .subject img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height: 100%;
+    opacity: 0;
+    transition: 0.4s opacity;
+}
+.desktop .subject img:first-child{
+    opacity: 1;
+}
+
+
+.desktop .download-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.desktop .download-box .download-btn{
+    width: 30vh;
+    height: 8vh;
+    background: linear-gradient(90deg,#f230ff,#722bff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 65px;
+    font-size: 2.5vh;
+    margin: 0 2vh;
+    cursor: pointer;
+    color:#fff;
+}
+.desktop .download-box .download-btn:hover{
+    background: #ef1f6b;
+}
+.desktop .download-box .download-btn i{
+    font-size: 2.6vh;
+    margin-right: 5px;
+}
+.desktop .qrcode-warp{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    padding: 5px 10px;
+}
+.desktop .qrcode-warp .qrcode{
+    width: 28vh;
+    height: 28vh;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.desktop .qrcode-warp img{
+    width: 100%;
+    height: 100%;
+}
+
+.desktop .qrcode-warp .qrcode .qrcode-logo{
+    width: 15%;
+    height: 15%;
+    padding: 3px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+}
+.desktop .qrcode-warp.animation{
+    animation-name: shadow;
+    animation-duration: 0.5s;
+    animation-iteration-count:2;
+}
+@keyframes shadow {
+    0% {box-shadow: 0 0 10px rgb(249,61,115);}
+    50% {box-shadow: 0 0 30px rgb(249,61,115);}
+    100% {box-shadow: 0 0 10px rgb(249,61,115);}
+}
+
+.desktop .section .app{
+    margin-bottom: 5vh;
+    /*transition: 0.55s transform ease-in-out 0.30s;*/
+    /*transform: translateY(400px);*/
+    position: relative;
+    display: flex;
+}
+
+.desktop .section .app img{
+    height: 80vh;
+}
+.desktop .section .app .decoration{
+    position: absolute;
+    transition: 0.3s transform;
+}
+.desktop .section1 .app .decoration-1{
+    left: -2vh;
+    top: 8vh;
+    height: 9vh;
+}
+.desktop .section1 .app .decoration-2{
+    right: -6.5vh;
+    top: 16vh;
+    height: 11vh;
+    animation-delay: 0.4s !important;
+}
+.desktop .section1 .app .decoration-3{
+    left: -11vh;
+    top: 30vh;
+    height: 11vh;
+    animation-delay: 0.5s !important;
+}
+.desktop .section1 .app .decoration-4{
+    right: -8vh;
+    top: 43vh;
+    height: 10vh;
+    animation-delay: 0.7s !important;
+}
+.desktop .section1 .app .decoration-5{
+    left: -2vh;
+    top: 47vh;
+    height: 11vh;
+    animation-delay: 0.4s !important;
+}
+.desktop .section1 .app .decoration-6{
+    right: -5vh;
+    bottom: -5vh;
+    height: 52vh;
+    z-index: -1;
+}
+
+.desktop .section.active .app .decoration{
+    opacity: 0;
+    animation: 1.2s fadeScaleIn 0.3s both;
+}
+.desktop .section1.active .app .decoration-6 {
+    animation: 1.2s fadeIn 0.8s both !important;
+}
+
+/* ---------- section2 --------- */
+.desktop .section.section2 .app img.main-img{
+    height: 70vh;
+}
+.desktop .section2 .app .decoration-1{
+    left: -3vh;
+    top: -2vh;
+    height: 44vh;
+    z-index: -1;
+}
+.desktop .section2 .app .decoration-2{
+    left: -7.5vh;
+    top: 10vh;
+    height: 9vh;
+    animation-delay: 0.4s !important;
+}
+.desktop .section2 .app .decoration-3{
+    right: -12vh;
+    top: 21vh;
+    height: 11vh;
+    animation-delay: 0.5s !important;
+}
+.desktop .section2 .app .decoration-4{
+    left: -13vh;
+    top: 26vh;
+    height: 12vh;
+    animation-delay: 0.7s !important;
+}
+.desktop .section2 .app .decoration-5{
+    right: -7vh;
+    top: 44vh;
+    height: 11vh;
+    animation-delay: 0.4s !important;
+}
+.desktop .section2 .app .decoration-6{
+    left: -7vh;
+    top: 46vh;
+    height: 11vh;
+}
+.desktop .section2.active .app .decoration-1 {
+    animation: 1.2s fadeIn 0.8s both !important;
+}
+/* ---------- section3 --------- */
+.desktop .section.section3 .app img.main-img{
+    height: 70vh;
+}
+.desktop .section3 .app .decoration-1{
+    left: -2vh;
+    top: 8vh;
+    height: 9vh;
+}
+.desktop .section3 .app .decoration-2{
+    right: -6.5vh;
+    top: 16vh;
+    height: 11vh;
+    animation-delay: 0.4s !important;
+}
+.desktop .section3 .app .decoration-3{
+    left: -11vh;
+    top: 30vh;
+    height: 11vh;
+    animation-delay: 0.5s !important;
+}
+.desktop .section3 .app .decoration-4{
+    right: -10vh;
+    top: 43vh;
+    height: 10vh;
+    animation-delay: 0.7s !important;
+}
+.desktop .section3 .app .decoration-5{
+    left: -8vh;
+    top: 47vh;
+    height: 11vh;
+    animation-delay: 0.4s !important;
+}
+.desktop .section3 .app .decoration-6{
+    right: -9vh;
+    bottom: -5vh;
+    height: 42vh;
+    z-index: -1;
+}
+/* ¶¯»­ */
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+@keyframes fadeScaleIn {
+    from {
+        transform: scale(0);
+        opacity: 0
+    }
+    to {
+        transform: scale(1);
+        opacity: 1
+    }
+}
+@keyframes rotation1 {
+    from {transform: rotate(15deg)}
+    to {transform: rotate(0deg)}
+}
+.rotation.rotation1{
+    transform: rotate(15deg);
+    transform-origin: bottom;
+}
+.rotation.rotation2{
+    transform: rotate(-9deg);
+    transform-origin: bottom;
+}
+.rotation.rotation3{
+    transform: rotate(15deg);
+    transform-origin: bottom;
+}
+#fp-nav ul li, .fp-slidesNav ul li{
+    height: 100% !important;
+    margin: 15px 5px;
+}
+#fp-nav ul li a, .fp-slidesNav ul li a{
+    height: 30px;
+}
+#fp-nav ul li a.active, .fp-slidesNav ul li a.active{
+    height: 50px;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background: rgba(255,255,255,0.3);
+    border-radius: 5px !important;
+    width: 10px !important;
+    height: 30px !important;
+    margin: -2px 0 0 -2px !important;
+    top: 0 !important;
+    transition: none;
+}
+#fp-nav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li a.active span, .fp-slidesNav ul li:hover a.active span{
+    background: #fff;
+    height: 50px !important;
+    margin: -2px 0 0 -2px !important;
+}
+
+.ftdown{
+
+}

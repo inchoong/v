@@ -1,0 +1,112 @@
+.fade-bg{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border-radius: 50vh 0 0 0;
+    background-color: rgba(0,0,0,0.7);
+    transition: all 0.4s;
+    width: 0;
+    height: 0;
+    /*transform: translate(50vh,50vh);*/
+}
+.fade-bg.active{
+    width: 100vh;
+    height: 100vh;
+}
+.doc{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    padding-bottom: 1rem;
+    max-width: 750px;
+    color: #fff;
+    font-size: .24rem;
+    background-color: #212737;
+    overflow-y: auto;
+}
+.main-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+.main-wrap.doc{
+
+}
+
+
+.doc .doc-title{
+    text-align: center;
+    padding: 0.45rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.doc .fix-close{
+    position: fixed;
+    right: 0.35rem;
+    top: 0.32rem;
+    width: 0.66rem;
+    height: 0.66rem;
+}
+/*.doc .doc-title:before,.doc .doc-title:after{*/
+/*    content: "";*/
+/*    display: inline-block;*/
+/*    flex: 1;*/
+/*    height: 1px;*/
+/*    background-color: #fef333;*/
+/*}*/
+
+.doc .doc-title img{
+    height: 0.43rem;
+    margin: 0 0.21rem;
+}
+.doc .main-content{
+    padding: 0 0.68rem;
+}
+.doc .main-content .question{
+    width: 100%;
+    background-color: rgba(0,0,0,0.42);
+    border-radius: 0.35rem;
+    padding: 0.18rem 0;
+    text-align: center;
+    margin-bottom: 0.25rem;
+}
+.doc .main-content .question img{
+    height: 0.38rem;
+}
+.doc .main-content .tip{
+    width: 100%;
+    font-size: 0.34rem;
+    margin-bottom: 0.25rem;
+}
+.doc .main-content .icon{
+    width: 0.64rem;
+}
+
+.doc-steps{
+
+}
+.doc-steps .step-text{
+    font-size: 0.28rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.08rem;
+}
+.doc-steps .step-text .icon{
+    width: 0.64rem;
+    vertical-align: text-top;
+}
+.doc-steps .step-img{
+    margin-bottom: 0.36rem;
+}
+.doc-steps .step-img img{
+    width: 100%;
+    border-radius: 0.32rem;
+}

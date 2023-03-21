@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>解析大师</title>
+  <link rel="icon" href="favicon.ico" > <!-- Microsoft Edge 网页浏览器徽标 favicon.ico--><!-- IE地址栏前换成自己的图标 -->
+  <link rel="Bookmark" href="favicon.ico">  <!-- 可以在收藏夹中显示出你的图标 https://app.pingcaca.com/favicon.ico -->	
+<style>
+html, body {
+  height: 98%;
+}
+
+body {
+  background: #0f3854;
+  background: -webkit-radial-gradient(center ellipse, #0a2e38 0%, #000000 70%);
+  background: radial-gradient(ellipse at center, #0a2e38 0%, #000000 70%);
+  background-size: 100%;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+#clock {
+  font-family: 'Share Tech Mono', monospace;
+  color: #ffffff;
+  text-align: center;
+
+  width: 400;
+  color: #daf6ff;
+  text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
+}
+#clock .time {
+  letter-spacing: 0.05em;
+  font-size: 60px;
+  padding: 5px 0;
+}
+#clock .date {
+  letter-spacing: 0.1em;
+  font-size: 15px;
+}
+#clock .text {
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  padding: 20px 0 0;
+}
+</style>
+</head>
+<body style="" link="cyan" alink="cyan" vlink="cyan">
+<script src="/jquery.min.js">
+</script>
+<div id="clock">
+<p align="center" class="date">...请输入视频地址...</p><br>
+<!-- <p align="center" class="time" id="time">00:00:00</p> -->
+
+<a href="https://time.is/Shanghai" id="time_is_link" rel="nofollow" style="font-size:24px" title="时光如水，让时间沉淀一切，让时间洗涤尘埃，让时间过滤纷杂，让时间见证一切。"><img src="https://img.shields.io/badge/上海-时间-brightgreen.svg"/></a> 
+<span id="Shanghai_z43d" style="font-size:24px"></span>
+<script src="//widget.time.is/zh.js"></script>
+<script>
+ time_is_widget.init({Shanghai_z43d:{template:"TIME<br>DATE<br>SUN", date_format:"year年monthnamednum日dayname", sun_format:"日出↑: srhour:srminute 日落↓: sshour:ssminute<br>昼长: dlhours时 dlminutes分", coords:"31.2222200,121.4580600"}});
+</script>
+<br><br>
+<p align="center">本解析全部免费,长期稳定,绝无广告！可自己下载源码搭建自己的解析平台！<br>诚意良心提供JSON接口，输出无任何加密处理的结果，方便大家接入ＡＰＰ</p>
+<br>
+<p align="center">解析平台地址： <a href="https://jx.htv009.com/?url=">https://jx.htv009.com/?url=</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p align="center">弹幕版接口： <a href="https://jx.htv009.com/dm/?url=">https://jx.htv009.com/dm/?url=</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p align="center">JSON接口地址： <a href="https://user.htv009.com/json?url=">https://user.htv009.com/json?url=</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p align="center">老版客户端PHP源码地址： <a href="https://user.htv009.com/parseserver.zip">https://user.htv009.com/parseserver.zip</a>
+</p>
+<p align="center">新版客户端PHP源码地址： <a href="https://user.htv009.com/parseserver.1.518.zip">https://user.htv009.com/parseserver.1.518.zip</a>(需要PHP7.0以上版本)</p>
+<br>
+<p align="center">例子：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p align="center">
+<a href="https://jx.htv009.com/?url=http://v.qq.com/x/cover/mzc00200q06w7zx/l0033spqumo.html">https://jx.htv009.com/?url=http://v.qq.com/x/cover/mzc00200q06w7zx/l0033spqumo.html</a>
+</p>
+<p align="center">
+<a href="https://user.htv009.com/json?url=http://www.iqiyi.com/v_19rwmz9bgc.html">https://user.htv009.com/json?url=http://www.iqiyi.com/v_19rwmz9bgc.html</a>
+</p>
+<br>
+<p align="center">如在使用中有任何疑问，请联系管理员解决。 <a href="https://app.pingcaca.com/">解析大师</a> 交流群：1147185636</p>
+<p align="center">仅供内部交流研究，不以盈利为目的　切勿用于商业如有涉及商业请自行负责...</p>
+<p><a href="pc.html">小苹果影院APP</a> | <a href="mobile.html">小苹果影院APP</a></p>
+</div>
+<script>
+
+var week = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+var timerID = setInterval(updateTime, 1000);
+updateTime();
+function updateTime() {
+    var cd = new Date();
+    $('#time').text(zeroPadding(cd.getHours(), 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2));
+    $('#text').text(zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth()+1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()]);
+};
+
+function zeroPadding(num, digit) {
+    var zero = '';
+    for(var i = 0; i < digit; i++) {
+        zero += '0';
+    }
+    return (zero + num).slice(-digit);
+}
+window.history.pushState(null, null, "/?url=");
+</script>
+
+</body>
+</html>
